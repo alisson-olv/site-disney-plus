@@ -15,6 +15,15 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  h1, h2, h3, h4 {
+    color: ${({ theme }) => theme.white};
+    margin-bottom: 0;
+  }
+
+  p {
+    color: ${({ theme }) => theme.silver};
+  }
+
   * {
     box-sizing: border-box;
   }

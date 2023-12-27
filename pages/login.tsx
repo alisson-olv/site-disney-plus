@@ -1,26 +1,28 @@
 import Head from 'next/head'
+import SignUp from '@/components/SignUp'
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
-export default function Home() {
+export default function Login() {
   const { data: session, status } = useSession();
   const router = useRouter();
 
   useEffect(() => {
-    if (!session) {
+    if (session) {
       router.push({
-        pathname: "/login",
+        pathname: "/",
       });
     }
+    return () => { };
   }, [])
 
   if (status === 'loading') return <p>Loading...</p>
 
-  if (session)
+  if (!session)
     return (
       <>
-        <h1>Disney+ Clone</h1>
+        <SignUp />
       </>
     )
 }
