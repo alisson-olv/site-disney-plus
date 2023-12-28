@@ -10,12 +10,16 @@
     "next-auth": "^4.24.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hover-video-player": "^10.0.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.0"
   },
   "devDependencies": {
     "@types/node": "^18.18.3",
-    "@types/react": "^18.2.33",
+    "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.14",
+    "@types/react-slick": "^0.23.13",
     "typescript": "^5.2.2"
   }
 }

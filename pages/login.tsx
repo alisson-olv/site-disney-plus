@@ -10,12 +10,13 @@ export default function Login() {
 
   useEffect(() => {
     if (session) {
+
       router.push({
         pathname: "/",
       });
     }
     return () => { };
-  }, [])
+  }, [session])
 
   if (status === 'loading') return <p>Loading...</p>
 
